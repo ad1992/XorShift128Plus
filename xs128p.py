@@ -4,6 +4,8 @@ import struct
 import random
 from z3 import *
 
+from power_ball import power_ball
+
 MASK = 0xFFFFFFFFFFFFFFFF
 
 # xor_shift_128_plus algorithm
