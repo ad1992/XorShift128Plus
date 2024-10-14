@@ -144,9 +144,9 @@ def main():
     # _ = []; for(var i=0; i<5; ++i) { _.push(Math.random()) } ; console.log(_)
     # Enter at least the 3 first random numbers you observed here:
     # Observations show Chrome needs ~5
-    dubs = [
-        0.5368584449767335, 0.883588766746984, 0.7895949638905317, 
-        0.5106241305628436, 0.49965622623126693]
+    input_arg = ' '.join(sys.argv[1:])
+    dubs = [float(num.strip()) for num in input_arg.split(',')]
+
     if browser == 'chrome':
         dubs = dubs[::-1]
 
